@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd"
+                 version="2.2">
+
+  <description>the XML mapping in the TripImpl</description>
+  <entity class="dst.ass1.jpa.model.impl.Trip" name="Trip">
+    <table name="TRIP"/>
+
+      <!--
+    <attributes>
+      <id name="id">
+        <generated-value strategy="AUTO"/>
+      </id>
+      <basic name="created">
+        <column name="CREATED"/>
+      </basic>
+      <basic name="updated">
+        <column name="UPDATED"/>
+      </basic>
+
+-->
+        <!--  private Long id;
+      private Date created;
+      private Date updated;
+      private TripState state;
+      private ILocation pickup;
+      private ILocation destination;
+      private Collection<ILocation> stops;
+      private ITripInfo tripInfo;
+      private IMatch match;
+      private IRider rider; -->
+      <!--
+             <basic name="state">
+                 <enumerated>STRING</enumerated>  Use STRING or ORDINAL based on your preference
+        </basic> -->
+        <!--
+        <one-to-one name="pickup" target-entity="dst.ass1.jpa.model.impl.Location" >
+            <join-column name="I_PICKUP" referenced-column-name="id" nullable="false"/>
+        </one-to-one>
+
+        <one-to-one name="destination" target-entity="dst.ass1.jpa.model.impl.Location">
+            <join-column name="I_DESTINATION" referenced-column-name="id" nullable="false"/>
+        </one-to-one>
+
+        <one-to-one name="tripInfo" target-entity="dst.ass1.jpa.model.impl.TripInfo">
+            <join-column name ="I_TRIP_INFO"  referenced-column-name= "id" nullable ="false"/>
+        </one-to-one>
+        <one-to-one name="match" target-entity="dst.ass1.jpa.model.impl.Match">
+            <join-column name="I_MATCH" referenced-column-name="id" nullable="false"/>
+        </one-to-one>
+        <one-to-one name="rider" target-entity="dst.ass1.jpa.model.impl.Rider">
+            <join-column name="I_Rider" referenced-column-name="id" nullable="false"/>
+        </one-to-one>
+
+
+        <many-to-many name="stops" target-entity="dst.ass1.jpa.model.impl.Location">
+            <join-table name="J_TRIP_LOCATION">
+                <join-column name="trip_id" referenced-column-name="id"/>
+                <inverse-join-column name="location_id" referenced-column-name="id"/>
+            </join-table>
+        </many-to-many>
+
+
+    </attributes>
+-->
+  </entity>
+
+
+</entity-mappings>
