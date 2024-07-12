@@ -3,7 +3,7 @@ package dst.ass1.jpa.model.impl;
 import dst.ass1.jpa.listener.DefaultListener;
 import dst.ass1.jpa.model.*;
 import org.hibernate.annotations.Target;
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.io.Serializable;
